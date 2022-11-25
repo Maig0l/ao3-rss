@@ -1,6 +1,15 @@
 # AO3 RSS
 
 This Flask app can be used to serve RSS and Atom feeds for works and series from Archive of Our Own (AO3).
+This fork aims to add a couple of QoL features (mainly to fit my use case).
+
+## To-do
+
+- [ ] Make home page
+  - [ ] Offer a bookmarklet
+  - [ ] Add search bar?
+- [ ] Make error pages prettier
+- [ ] Redirect from work chapter to work page (and notify user)
 
 ## Quick Start
 
@@ -70,4 +79,3 @@ You can use environment variables to configure how `ao3-rss` makes feeds.
 | `AO3_WORK_CACHE_TTL`        | `3600` (1 hr)  | 0 or positive integer     | The amount of time, in seconds, before a work feed in the cache should expire. Note that Atom and RSS use separate caches, but both use this value.   |
 | `AO3_SERIES_CACHE_SIZE`     | `2048`         | 0 or positive integer     | The maximum number of feeds to keep in the cache. Note that Atom and RSS use separate caches, but both use this value. Set to 0 to disable.           |
 | `AO3_SERIES_CACHE_TTL`      | `14400` (4 hr) | 0 or positive integer     | The amount of time, in seconds, before a series feed in the cache should expire. Note that Atom and RSS use separate caches, but both use this value. |
-
